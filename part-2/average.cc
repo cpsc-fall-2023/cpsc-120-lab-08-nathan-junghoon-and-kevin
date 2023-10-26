@@ -22,8 +22,7 @@ int main(int argc, char* argv[]) {
   };
 
   double average_value{0.0};
-  double argument_size = static_cast<double>(arguments.size());
-  average_value = sum_variable / argument_size;
+  average_value = sum_variable / argc;
 
   std::cout << "average = " << "*" << average_value << "*";
 
