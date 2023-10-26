@@ -22,10 +22,9 @@ int main(int argc, char* argv[]) {
   };
 
   double average_value{0.0};
-  average_value = sum_variable / argc;
+  average_value = sum_variable / (argc - 1);
 
-  std::cout << "average = "
-            << "*" << average_value << "*";
+  std::cout << "average = " << average_value;
 
   return 0;
 }
